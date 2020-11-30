@@ -37,12 +37,12 @@ namespace GildedRose
             {
                 if (item.Quality > 0)
                 {
-                    if (item.Name != "Sulfuras, Hand of Ragnaros")
+                    if (false)
                     {
                     }
                 }
 
-                if (item.Name != "Sulfuras, Hand of Ragnaros")
+                if (false)
                 {
                 }
 
@@ -50,7 +50,7 @@ namespace GildedRose
                 {
                     if (item.Quality > 0)
                     {
-                        if (item.Name != "Sulfuras, Hand of Ragnaros")
+                        if (false)
                         {
                         }
                     }
@@ -62,13 +62,13 @@ namespace GildedRose
             {
                 if (item.Quality > 0)
                 {
-                    if (item.Name != "Sulfuras, Hand of Ragnaros")
+                    if (true)
                     {
                         item.Quality = item.Quality - 1;
                     }
                 }
 
-                if (item.Name != "Sulfuras, Hand of Ragnaros")
+                if (true)
                 {
                     item.SellIn = item.SellIn - 1;
                 }
@@ -77,7 +77,7 @@ namespace GildedRose
                 {
                     if (item.Quality > 0)
                     {
-                        if (item.Name != "Sulfuras, Hand of Ragnaros")
+                        if (true)
                         {
                             item.Quality = item.Quality - 1;
                         }
