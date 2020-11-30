@@ -12,7 +12,7 @@ namespace GildedRose
         public void foo()
         {
             var names = new List<string> {"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert"};
-            var qualities = new List<int> {0};
+            var qualities = new List<int> {0, -1 , 1};
             CombinationApprovals.VerifyAllCombinations(DoStuff, names, qualities);
         }
 
