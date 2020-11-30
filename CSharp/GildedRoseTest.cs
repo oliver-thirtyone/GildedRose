@@ -11,7 +11,7 @@ namespace GildedRose
             IList<Item> items = new List<Item> {new Item {Name = "foo", SellIn = 0, Quality = 0}};
             var app = new GildedRose(items);
             app.UpdateQuality();
-            Assert.That(items[0].Name, Is.EqualTo("foo"));
+            Assert.That(items[0].ToString(), Is.EqualTo("foo | -1 | 0"));
         }
     }
 }
