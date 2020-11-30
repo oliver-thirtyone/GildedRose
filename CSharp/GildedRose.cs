@@ -35,32 +35,30 @@ namespace GildedRose
 
             if (item.Name == "Sulfuras, Hand of Ragnaros")
             {
-                UpdateQualityForEverythingElse(item);
+                if (item.Quality > 0)
+                {
+                    if (item.Name != "Sulfuras, Hand of Ragnaros")
+                    {
+                    }
+                }
+
+                if (item.Name != "Sulfuras, Hand of Ragnaros")
+                {
+                }
+
+                if (item.SellIn < 0)
+                {
+                    if (item.Quality > 0)
+                    {
+                        if (item.Name != "Sulfuras, Hand of Ragnaros")
+                        {
+                        }
+                    }
+                }
+
                 return;
             }
             else
-            {
-                UpdateQualityForEverythingElse(item);
-                return;
-            }
-        }
-
-        private static void UpdateQualityForEverythingElse(Item item)
-        {
-            if (item.Quality > 0)
-            {
-                if (item.Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    item.Quality = item.Quality - 1;
-                }
-            }
-
-            if (item.Name != "Sulfuras, Hand of Ragnaros")
-            {
-                item.SellIn = item.SellIn - 1;
-            }
-
-            if (item.SellIn < 0)
             {
                 if (item.Quality > 0)
                 {
@@ -69,6 +67,24 @@ namespace GildedRose
                         item.Quality = item.Quality - 1;
                     }
                 }
+
+                if (item.Name != "Sulfuras, Hand of Ragnaros")
+                {
+                    item.SellIn = item.SellIn - 1;
+                }
+
+                if (item.SellIn < 0)
+                {
+                    if (item.Quality > 0)
+                    {
+                        if (item.Name != "Sulfuras, Hand of Ragnaros")
+                        {
+                            item.Quality = item.Quality - 1;
+                        }
+                    }
+                }
+
+                return;
             }
         }
 
