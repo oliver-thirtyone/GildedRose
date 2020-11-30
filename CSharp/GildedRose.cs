@@ -27,6 +27,15 @@ namespace GildedRose
                 return;
             }
 
+            if (item.Name == "Backstage passes to a TAFKAL80ETC concert")
+            {
+                
+            }
+            else
+            {
+                
+            }
+            
             UpdateQualityForEverythingElse(item);
             return;
         }
