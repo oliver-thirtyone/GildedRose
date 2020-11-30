@@ -34,6 +34,28 @@ namespace GildedRose
             }
             else
             {
+                UpdateQualityForEverythingElse(item);
+                return;
+            }
+        }
+
+        private static void UpdateQualityForEverythingElse(Item item)
+        {
+            if (item.Quality > 0)
+            {
+                if (item.Name != "Sulfuras, Hand of Ragnaros")
+                {
+                    item.Quality = item.Quality - 1;
+                }
+            }
+
+            if (item.Name != "Sulfuras, Hand of Ragnaros")
+            {
+                item.SellIn = item.SellIn - 1;
+            }
+
+            if (item.SellIn < 0)
+            {
                 if (item.Quality > 0)
                 {
                     if (item.Name != "Sulfuras, Hand of Ragnaros")
@@ -41,24 +63,6 @@ namespace GildedRose
                         item.Quality = item.Quality - 1;
                     }
                 }
-
-                if (item.Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    item.SellIn = item.SellIn - 1;
-                }
-
-                if (item.SellIn < 0)
-                {
-                    if (item.Quality > 0)
-                    {
-                        if (item.Name != "Sulfuras, Hand of Ragnaros")
-                        {
-                            item.Quality = item.Quality - 1;
-                        }
-                    }
-                }
-
-                return;
             }
         }
 
