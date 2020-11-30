@@ -35,15 +35,14 @@ namespace GildedRose
 
             if (item.Name == "Sulfuras, Hand of Ragnaros")
             {
-                
+                UpdateQualityForEverythingElse(item);
+                return;
             }
             else
             {
-                
+                UpdateQualityForEverythingElse(item);
+                return;
             }
-            
-            UpdateQualityForEverythingElse(item);
-            return;
         }
 
         private static void UpdateQualityForEverythingElse(Item item)
