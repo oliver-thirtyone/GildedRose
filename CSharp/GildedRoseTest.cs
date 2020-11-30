@@ -12,7 +12,8 @@ namespace GildedRose
         public void foo()
         {
             var names = new List<string> {"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert"};
-            CombinationApprovals.VerifyAllCombinations(name => DoStuff(name, 0), names);
+            var qualities = new List<int> {0};
+            CombinationApprovals.VerifyAllCombinations(DoStuff, names, qualities);
         }
 
         private static string DoStuff(string name, int quality)
