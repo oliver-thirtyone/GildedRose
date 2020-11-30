@@ -11,13 +11,13 @@ namespace GildedRose
         [Test]
         public void foo()
         {
-            var result = DoStuff();
+            var result = DoStuff("foo");
             Approvals.Verify(result);
         }
 
-        private static string DoStuff()
+        private static string DoStuff(string name)
         {
-            IList<Item> items = new List<Item> {new Item {Name = "foo", SellIn = 0, Quality = 0}};
+            IList<Item> items = new List<Item> {new Item {Name = name, SellIn = 0, Quality = 0}};
             var app = new GildedRose(items);
             app.UpdateQuality();
             var result = items[0].ToString();
