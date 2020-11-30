@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 using NUnit.Framework;
@@ -12,7 +14,7 @@ namespace GildedRose
         public void foo()
         {
             var names = new List<string> {"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"};
-            var sellIns = new List<int> {0};
+            var sellIns = Enumerable.Range(-1, 17);
             var qualities = new List<int> {0, -1 , 1, 49, 50, 51};
             CombinationApprovals.VerifyAllCombinations(DoStuff, names, sellIns, qualities);
         }
