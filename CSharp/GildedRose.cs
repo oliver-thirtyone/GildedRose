@@ -35,27 +35,6 @@ namespace GildedRose
 
             if (item.Name == "Sulfuras, Hand of Ragnaros")
             {
-                if (item.Quality > 0)
-                {
-                    if (false)
-                    {
-                    }
-                }
-
-                if (false)
-                {
-                }
-
-                if (item.SellIn < 0)
-                {
-                    if (item.Quality > 0)
-                    {
-                        if (false)
-                        {
-                        }
-                    }
-                }
-
                 return;
             }
             else
