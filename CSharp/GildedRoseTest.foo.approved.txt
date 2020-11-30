@@ -7,3 +7,6 @@
 [Backstage passes to a TAFKAL80ETC concert,0] => Backstage passes to a TAFKAL80ETC concert | -1 | 0
 [Backstage passes to a TAFKAL80ETC concert,-1] => Backstage passes to a TAFKAL80ETC concert | -1 | 0
 [Backstage passes to a TAFKAL80ETC concert,1] => Backstage passes to a TAFKAL80ETC concert | -1 | 0
+[Sulfuras, Hand of Ragnaros,0] => Sulfuras, Hand of Ragnaros | 0 | 0
+[Sulfuras, Hand of Ragnaros,-1] => Sulfuras, Hand of Ragnaros | 0 | -1
+[Sulfuras, Hand of Ragnaros,1] => Sulfuras, Hand of Ragnaros | 0 | 1
