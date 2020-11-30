@@ -37,11 +37,9 @@ namespace GildedRose
             {
                 return;
             }
-            else
-            {
-                UpdateQualityForDefaultItems(item);
-                return;
-            }
+
+            UpdateQualityForDefaultItems(item);
+            return;
         }
 
         private static void UpdateQualityForDefaultItems(Item item)
