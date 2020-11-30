@@ -23,14 +23,14 @@ namespace GildedRose
         {
             if (item.Name == "Aged Brie")
             {
+                DoStuff2(item);
+                return;
             }
             else
             {
-                
+                DoStuff2(item);
+                return;
             }
-
-            DoStuff2(item);
-            return;
         }
 
         private static void DoStuff2(Item item)
