@@ -26,12 +26,9 @@ namespace GildedRose
                 UpdateQualityForAgedBrie(item);
                 return;
             }
-            else
-            {
-                UpdateQualityForEverythingElse(item);
 
-                return;
-            }
+            UpdateQualityForEverythingElse(item);
+            return;
         }
 
         private static void UpdateQualityForEverythingElse(Item item)
