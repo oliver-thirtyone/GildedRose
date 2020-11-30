@@ -33,6 +33,15 @@ namespace GildedRose
                 return;
             }
 
+            if (item.Name == "Sulfuras, Hand of Ragnaros")
+            {
+                
+            }
+            else
+            {
+                
+            }
+            
             UpdateQualityForEverythingElse(item);
             return;
         }
