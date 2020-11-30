@@ -60,13 +60,7 @@ namespace GildedRose
 
                 if (item.SellIn < 0)
                 {
-                    if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
-                    {
-                    }
-                    else
-                    {
-                        item.Quality = item.Quality - item.Quality;
-                    }
+                    item.Quality = item.Quality - item.Quality;
                 }
 
                 return;
