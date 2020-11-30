@@ -38,15 +38,15 @@ namespace GildedRose
                 return;
             }
 
-            UpdateQualityForDefaultItems(item);
+            UpdateQualityForDefaultItems(item, degradeRate: 1);
             return;
         }
 
-        private static void UpdateQualityForDefaultItems(Item item)
+        private static void UpdateQualityForDefaultItems(Item item, int degradeRate)
         {
             if (item.Quality > 0)
             {
-                item.Quality = item.Quality - 1;
+                item.Quality = item.Quality - degradeRate;
             }
 
             item.SellIn = item.SellIn - 1;
@@ -55,7 +55,7 @@ namespace GildedRose
             {
                 if (item.Quality > 0)
                 {
-                    item.Quality = item.Quality - 1;
+                    item.Quality = item.Quality - degradeRate;
                 }
             }
         }
