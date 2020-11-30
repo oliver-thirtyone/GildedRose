@@ -29,15 +29,14 @@ namespace GildedRose
 
             if (item.Name == "Backstage passes to a TAFKAL80ETC concert")
             {
-                
+                UpdateQualityForEverythingElse(item);
+                return;
             }
             else
             {
-                
+                UpdateQualityForEverythingElse(item);
+                return;
             }
-            
-            UpdateQualityForEverythingElse(item);
-            return;
         }
 
         private static void UpdateQualityForEverythingElse(Item item)
