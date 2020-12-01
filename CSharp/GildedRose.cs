@@ -31,6 +31,7 @@ namespace GildedRose
             }
 
             DoStuff2(item);
+            return;
         }
 
         private static void DoStuff2(Item item)
