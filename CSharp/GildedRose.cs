@@ -38,6 +38,12 @@ namespace GildedRose
                 return;
             }
 
+            if (item.Name.Contains("Conjured"))
+            {
+                UpdateQualityForNormalItems(item, degradeRate: 2);
+                return;
+            }
+            
             UpdateQualityForNormalItems(item, degradeRate: 1);
             return;
         }
