@@ -32,7 +32,21 @@ namespace GildedRose
                 UpdateQualityForBackstagePasses(item);
                 return;
             }
-            else
+
+            if (item.Quality > 0)
+            {
+                if (item.Name != "Sulfuras, Hand of Ragnaros")
+                {
+                    item.Quality = item.Quality - 1;
+                }
+            }
+
+            if (item.Name != "Sulfuras, Hand of Ragnaros")
+            {
+                item.SellIn = item.SellIn - 1;
+            }
+
+            if (item.SellIn < 0)
             {
                 if (item.Quality > 0)
                 {
@@ -41,25 +55,9 @@ namespace GildedRose
                         item.Quality = item.Quality - 1;
                     }
                 }
-
-                if (item.Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    item.SellIn = item.SellIn - 1;
-                }
-
-                if (item.SellIn < 0)
-                {
-                    if (item.Quality > 0)
-                    {
-                        if (item.Name != "Sulfuras, Hand of Ragnaros")
-                        {
-                            item.Quality = item.Quality - 1;
-                        }
-                    }
-                }
-
-                return;
             }
+
+            return;
         }
 
         private static void UpdateQualityForBackstagePasses(Item item)
