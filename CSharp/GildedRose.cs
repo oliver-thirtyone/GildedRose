@@ -21,39 +21,20 @@ namespace GildedRose
 
         private static void DoStuff(Item item)
         {
-            if (item.Name == "Aged Brie" )
+            if (item.Name == "Aged Brie")
             {
-                if (false)
+                if (item.Quality < 50)
                 {
+                    item.Quality = item.Quality + 1;
                 }
-                else
+
+                item.SellIn = item.SellIn - 1;
+
+                if (item.SellIn < 0)
                 {
                     if (item.Quality < 50)
                     {
                         item.Quality = item.Quality + 1;
-
-                        if (false)
-                        {
-                        }
-                    }
-                }
-
-                if (true)
-                {
-                    item.SellIn = item.SellIn - 1;
-                }
-
-                if (item.SellIn < 0)
-                {
-                    if (false)
-                    {
-                    }
-                    else
-                    {
-                        if (item.Quality < 50)
-                        {
-                            item.Quality = item.Quality + 1;
-                        }
                     }
                 }
 
@@ -61,7 +42,7 @@ namespace GildedRose
             }
             else
             {
-                if (true && item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
                 {
                     if (item.Quality > 0)
                     {
@@ -105,25 +86,19 @@ namespace GildedRose
 
                 if (item.SellIn < 0)
                 {
-                    if (true)
+                    if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
                     {
-                        if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                        if (item.Quality > 0)
                         {
-                            if (item.Quality > 0)
+                            if (item.Name != "Sulfuras, Hand of Ragnaros")
                             {
-                                if (item.Name != "Sulfuras, Hand of Ragnaros")
-                                {
-                                    item.Quality = item.Quality - 1;
-                                }
+                                item.Quality = item.Quality - 1;
                             }
-                        }
-                        else
-                        {
-                            item.Quality = item.Quality - item.Quality;
                         }
                     }
                     else
                     {
+                        item.Quality = item.Quality - item.Quality;
                     }
                 }
 
