@@ -38,6 +38,12 @@ namespace GildedRose
                 return;
             }
 
+            UpdateQualityForNormalItems(item);
+            return;
+        }
+
+        private static void UpdateQualityForNormalItems(Item item)
+        {
             if (item.Quality > 0)
             {
                 item.Quality = item.Quality - 1;
