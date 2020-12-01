@@ -12,12 +12,12 @@ namespace GildedRose
         public void foo()
         {
             var names = new List<string> {"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"};
-            CombinationApprovals.VerifyAllCombinations(DoStuff, names);
+            CombinationApprovals.VerifyAllCombinations(name => DoStuff(name, 0), names);
         }
 
-        private static string DoStuff(string name)
+        private static string DoStuff(string name, int quality)
         {
-            IList<Item> items = new List<Item> {new Item {Name = name, SellIn = 0, Quality = 0}};
+            IList<Item> items = new List<Item> {new Item {Name = name, SellIn = 0, Quality = quality}};
             var app = new GildedRose(items);
             app.UpdateQuality();
             var result = items[0].ToString();
