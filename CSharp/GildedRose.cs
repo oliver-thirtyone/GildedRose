@@ -33,27 +33,23 @@ namespace GildedRose
                 return;
             }
 
-            if (item.Quality > 0)
+            if (item.Name == "Sulfuras, Hand of Ragnaros")
             {
-                if (item.Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    item.Quality = item.Quality - 1;
-                }
+                return;
             }
 
-            if (item.Name != "Sulfuras, Hand of Ragnaros")
+            if (item.Quality > 0)
             {
-                item.SellIn = item.SellIn - 1;
+                item.Quality = item.Quality - 1;
             }
+
+            item.SellIn = item.SellIn - 1;
 
             if (item.SellIn < 0)
             {
                 if (item.Quality > 0)
                 {
-                    if (item.Name != "Sulfuras, Hand of Ragnaros")
-                    {
-                        item.Quality = item.Quality - 1;
-                    }
+                    item.Quality = item.Quality - 1;
                 }
             }
 
