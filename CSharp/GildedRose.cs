@@ -45,7 +45,7 @@ namespace GildedRose
 
                 if (item.SellIn < 0)
                 {
-                    if (item.Name != "Aged Brie")
+                    if (false)
                     {
                     }
                     else
