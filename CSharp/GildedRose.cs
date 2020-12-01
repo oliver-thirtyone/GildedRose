@@ -27,6 +27,12 @@ namespace GildedRose
                 return;
             }
 
+            DoStuff2(item);
+            return;
+        }
+
+        private static void DoStuff2(Item item)
+        {
             if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
             {
                 if (item.Quality > 0)
