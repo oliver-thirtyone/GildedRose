@@ -14,7 +14,8 @@ namespace GildedRose
             IList<Item> items = new List<Item> {new Item {Name = "foo", SellIn = 0, Quality = 0}};
             var app = new GildedRose(items);
             app.UpdateQuality();
-            Approvals.Verify(items[0].ToString());
+            var result = items[0].ToString();
+            Approvals.Verify(result);
         }
     }
 }
