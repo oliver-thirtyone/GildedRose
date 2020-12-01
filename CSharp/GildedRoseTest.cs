@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using ApprovalTests;
 using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 using NUnit.Framework;
@@ -25,6 +26,12 @@ namespace GildedRose
             app.UpdateQuality();
             var result = items[0].ToString();
             return result;
+        }
+
+        [Test]
+        public void testConjured()
+        {
+            Approvals.Verify(DoStuff("Conjured whatever", 1, 10));
         }
     }
 }
