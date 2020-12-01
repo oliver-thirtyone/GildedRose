@@ -29,7 +29,7 @@ namespace GildedRose
 
             if (item.Name == "Backstage passes to a TAFKAL80ETC concert")
             {
-                if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                if (false)
                 {
                 }
                 else
@@ -66,7 +66,7 @@ namespace GildedRose
 
                 if (item.SellIn < 0)
                 {
-                    if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                    if (false)
                     {
                     }
                     else
@@ -79,7 +79,7 @@ namespace GildedRose
             }
             else
             {
-                if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                if (true)
                 {
                     if (item.Quality > 0)
                     {
@@ -100,7 +100,7 @@ namespace GildedRose
 
                 if (item.SellIn < 0)
                 {
-                    if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                    if (true)
                     {
                         if (item.Quality > 0)
                         {
