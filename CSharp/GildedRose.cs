@@ -21,6 +21,11 @@ namespace GildedRose
 
         private static void DoStuff(Item item)
         {
+            DoStuff2(item);
+        }
+
+        private static void DoStuff2(Item item)
+        {
             if (item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
             {
                 if (item.Quality > 0)
