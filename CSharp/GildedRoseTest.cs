@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using ApprovalTests;
+using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 using NUnit.Framework;
 
@@ -11,8 +11,8 @@ namespace GildedRose
         [Test]
         public void foo()
         {
-            var result = DoStuff("foo");
-            Approvals.Verify(result);
+            var names = new List<string> {"foo"};
+            CombinationApprovals.VerifyAllCombinations(DoStuff, names);
         }
 
         private static string DoStuff(string name)
