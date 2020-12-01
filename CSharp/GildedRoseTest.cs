@@ -11,7 +11,7 @@ namespace GildedRose
         [Test]
         public void foo()
         {
-            var names = new List<string> {"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert"};
+            var names = new List<string> {"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"};
             CombinationApprovals.VerifyAllCombinations(DoStuff, names);
         }
 
